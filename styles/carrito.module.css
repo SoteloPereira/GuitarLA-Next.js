@@ -1,0 +1,71 @@
+.contenido{
+    display: grid;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+@media (min-width: 768px) { 
+     .contenido{
+        grid-template-columns: 3fr 2fr;
+     }
+}
+
+.carrito{
+    padding: 3rem 0;
+}
+.producto{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    border-bottom: 1px solid #cfcfcf;
+    padding: 2rem 0;
+    position: relative;
+}
+.producto:last-of-type{
+    border-bottom: none;
+}
+.producto span{
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+.producto p{
+    margin: 0 0 1rem;
+}
+.nombre{
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.precio{
+    font-weight: 700;
+    color: var(--primary);
+}
+.resumen{
+    background-color: #f9faf1;
+    padding: 3rem;
+    border-radius: 1rem;
+    /*ambas para dejarlo como fijo cuando la lista de guitarras es larga */
+    position: sticky;
+    top: 3rem;
+}
+.cantidad{
+    display: flex;
+    align-items: flex-start;
+    gap:2rem;
+}
+.select{
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+}
+.eliminar{
+    position:absolute;
+    top: 10rem;
+    right: 10rem;
+    border: none;
+    background-color: var(--white);
+
+}
+.eliminar:hover{
+    cursor: pointer;
+}

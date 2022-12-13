@@ -1,0 +1,52 @@
+.header{
+    background-image: linear-gradient(to right, rgb(0 0 0 / .6), rgb(0 0 0 / .7)), 
+    url('../public/img/header.jpg');
+    padding: 5rem 0;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.barra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) { 
+     .barra{
+        flex-direction: row;
+        justify-content: space-between;
+     }
+}
+.navegacion{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column ;
+    margin-top: 5rem;
+    text-align: center;
+    align-items: center;
+}
+@media (min-width: 768px) { 
+     .navegacion{
+        flex-direction: row;
+        margin: 0;
+     }
+}
+.navegacion a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 2.1rem;
+    padding: 1rem;
+    transition: all 300ms ease;
+    font-weight: 600;
+}
+@media (min-width: 768px) { 
+    .navegacion a{
+        font-size: 1.8rem;
+    }
+}
+.navegacion a:hover{
+    background-color: var(--primary);
+}
