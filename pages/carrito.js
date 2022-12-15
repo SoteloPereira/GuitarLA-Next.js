@@ -43,7 +43,7 @@ export default function Carrito( { carrito, actualizarCantidad, eliminarProducto
                                         id: producto.id,
                                         cantidad: +e.target.value})}
                                       >
-                                      <option value={producto.cantidad}></option>
+                                      <option value>{producto.cantidad}</option>
                                       <option value="1">1</option>
                                       <option value="2">2</option>
                                       <option value="3">3</option>
